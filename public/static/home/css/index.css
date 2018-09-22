@@ -10,8 +10,8 @@ li{list-style:none;}
 img{display:block;border:0px;}
 /*end*/
 #header{width:1000px;margin:0 auto;}
-#header h1{font-size:24px;color:#664666;padding:5px 0 5px 15px;font-weight:600;}
-#header p{font-size:18px;color:#DB5E5E;font-weight:500;} 
+#header h1{font-size:24px;color:#664666;padding:5px 0 20px 0px;font-weight:600;}
+#header p{font-size:18px;font-weight:500;} 
 #nav{width:1000px;margin:20px auto; }
 #nav ul li{width:140px;height:30px;line-height:30px;float:left;text-align:center;margin:0px 2px 0px 0px;}
 #nav ul li a{color:#506F70;font-size:16px;width:140px;height:30px;display:block;}
@@ -53,7 +53,7 @@ text-align:center;padddding:2px 5px;border:1px solid #AC9696;border-radius:2px;}
 #c_right .s_about{width:260px;border:1px solid #ccc;background:#fff;}
 #c_right .s_about h2{width:230px;margin:0 auto;font-size:16px;color:#333;padding:10px 0px 3px 10px;border-bottom:1px solid #555;}
 #c_right .s_about img{margin:0 auto;margin-top:10px;}
-#c_right .s_about p{padding-left:30px;}
+#c_right .s_about p{padding-left:30px; padding-top: 10px;}
 #c_right .s_about p .b_1{display:block;width:93px;height:30px; background:url("../images/qq_bg.png") no-repeat;}
 #c_right .s_about p .b_2{margin-left:20px;display:block;width:97px;height:25px; background:url("../images/qq_bg.png") -93px 0 no-repeat;}
 /*随机、最新文章*/
