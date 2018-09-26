@@ -7,11 +7,12 @@
 <meta name="description" content="" />
 <link rel="stylesheet" href="__STATIC__/home/css/index.css"/>
 <link rel="stylesheet" href="__STATIC__/home/css/style.css"/>
-<script type="text/javascript" src="__STATIC__/home/js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="__STATIC__/home/contact/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="__STATIC__/home/js/jquery.SuperSlide.2.1.1.js"></script>
 <!--[if lt IE 9]>
 <script src="__STATIC__/home/js/html5.js"></script>
 <![endif]-->
+    <link rel="stylesheet" href="__STATIC__/home/contact/css/style.css">
 </head>
 
 <body>
@@ -24,14 +25,14 @@
     <!--nav-->
      <div id="nav">
         <ul>
-         <li><a href="{:url('Index/index')}">首页</a></li>
-         <li><a href="#">碎言碎语</a></li>
-         <li><a href="#">个人日记</a></li>
-         <li><a href="#">相册展示</a></li>
-         <li><a href="#">学无止境</a></li>
-         <li><a href="#">留言板</a></li>
-         <li><a href="{:url('Profile/index')}" target="_blank">我的简历</a></li>
-         <div class="clear"></div>
+            <li><a href="{:url('Index/index')}">首页</a></li>
+            <li><a href="{:url('Quotations/index')}">碎言碎语</a></li>
+            <li><a href="{:url('Diary/index')}">个人日记</a></li>
+            <li><a href="{:url('Html/index')}">模板展示</a></li>
+            <li><a href="{:url('Study/index')}">学无止境</a></li>
+            <li><a href="{:url('Putwords/index')}">留言板</a></li>
+            <li><a href="{:url('Profile/index')}" target="_blank">我的简历</a></li>
+            <div class="clear"></div>
         </ul>
       </div>
        <!--nav end-->
@@ -74,8 +75,7 @@
            <p>博主：宋世杰</p>
            <p>职业：PHP后端工程师</p>
            <p>简介：一个有梦想的菜鸟工程师</p>
-           <p>
-           <a href="#" title="联系博主"><span class="left b_1"></span></a><a href="#" title="加入QQ群，一起学习！"><span class="left b_2"></span></a>
+           <p></p>
            <div class="clear"></div>
            </p>
           </div>
@@ -128,5 +128,81 @@
     <!--footer end-->
     <script type="text/javascript">jQuery(".lanmubox").slide({easing:"easeOutBounce",delayTime:400});</script>
     <script  type="text/javascript" src="__STATIC__/home/js/nav.js"></script>
+    <!--侧边导航 start-->
+    <div class="suspension">
+        <div class="suspension-box">
+            <a href="#" class="a a-service "><i class="i"></i></a>
+            <a href="javascript:;" class="a a-service-phone "><i class="i"></i></a>
+            <a href="javascript:;" class="a a-qrcode"><i class="i"></i></a>
+            <a href="#" title="待开放" class="a a-cart"><i class="i"></i></a>
+            <a href="javascript:;" class="a a-top"><i class="i"></i></a>
+            <div class="d d-service">
+                <i class="arrow"></i>
+                <div class="inner-box">
+                    <div class="d-service-item clearfix">
+                        <a href="tencent://message/?uin=997031758=在线咨询&amp;menu=yes" class="clearfix" target="_blank"><span class="circle"><i class="i-qq"></i></span><h3>咨询在线客服</h3></a>
+                    </div>
+                </div>
+            </div>
+            <div class="d d-service-phone">
+                <i class="arrow"></i>
+                <div class="inner-box">
+                    <div class="d-service-item clearfix">
+                        <span class="circle"><i class="i-tel"></i></span>
+                        <div class="text">
+                            <p>合作热线</p>
+                            <p class="red number">13102112093</p>
+                        </div>
+                    </div>
+                    <div class="d-service-intro clearfix">
+                        <p><i></i>欢迎来访</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d d-qrcode">
+                <i class="arrow"></i>
+                <div class="inner-box">
+                    <div class="qrcode-img"><img src="__STATIC__/home/contact/images/side_ewm.jpg" style="width: 200px; padding-left: 12px;" ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            /* ----- 侧边悬浮 ---- */
+            $(document).on("mouseenter", ".suspension .a", function(){
+                var _this = $(this);
+                var s = $(".suspension");
+                var isService = _this.hasClass("a-service");
+                var isServicePhone = _this.hasClass("a-service-phone");
+                var isQrcode = _this.hasClass("a-qrcode");
+                if(isService){ s.find(".d-service").show().siblings(".d").hide();}
+                if(isServicePhone){ s.find(".d-service-phone").show().siblings(".d").hide();}
+                if(isQrcode){ s.find(".d-qrcode").show().siblings(".d").hide();}
+            });
+            $(document).on("mouseleave", ".suspension, .suspension .a-top", function(){
+                $(".suspension").find(".d").hide();
+            });
+            $(document).on("mouseenter", ".suspension .a-top", function(){
+                $(".suspension").find(".d").hide();
+            });
+            $(document).on("click", ".suspension .a-top", function(){
+                $("html,body").animate({scrollTop: 0});
+            });
+            $(window).scroll(function(){
+                var st = $(document).scrollTop();
+                var $top = $(".suspension .a-top");
+                if(st > 400){
+                    $top.css({display: 'block'});
+                }else{
+                    if ($top.is(":visible")) {
+                        $top.hide();
+                    }
+                }
+            });
+
+        });
+    </script>
+<!--侧边导航 end-->
 </body>
 </html>
