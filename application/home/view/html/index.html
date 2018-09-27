@@ -28,7 +28,7 @@
             <li><a href="{:url('Diary/index')}">个人日记</a></li>
             <li><a href="{:url('Html/index')}">模板展示</a></li>
             <li><a href="{:url('Study/index')}">学无止境</a></li>
-            <li><a href="{:url('Putwords/index')}">留言板</a></li>
+            <li><a href="#">留言板</a></li>
             <li><a href="{:url('Profile/index')}" target="_blank">我的简历</a></li>
             <div class="clear"></div>
         </ul>
@@ -86,10 +86,8 @@
     </div>
 </div>
 <!--content end-->
-<!--footer-->
-<div id="footer">
-    <p>Design by:少年 2014-8-9</p>
-</div>
+<!--footer start-->
+{include file="./static/home/footer.html" /}
 <!--footer end-->
 <script type="text/javascript">jQuery(".lanmubox").slide({easing:"easeOutBounce",delayTime:400});</script>
 <script  type="text/javascript" src="__STATIC__/home/js/nav.js"></script>

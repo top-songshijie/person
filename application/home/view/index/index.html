@@ -12,30 +12,16 @@
 <!--[if lt IE 9]>
 <script src="__STATIC__/home/js/html5.js"></script>
 <![endif]-->
-    <link rel="stylesheet" href="__STATIC__/home/contact/css/style.css">
+<link rel="stylesheet" href="__STATIC__/home/contact/css/style.css">
 </head>
 
 <body>
     <!--header start-->
-    <div id="header">
-      <h1>小杰的个人博客</h1>
-      <p>青春是打开了,就合不上的书。人生是踏上了，就回不了头的路，爱情是扔出了，就收不回的赌注。</p>    
-    </div>
-     <!--header end-->
+    {include file="./static/home/header.html" /}
+    <!--header end-->
     <!--nav-->
-     <div id="nav">
-        <ul>
-            <li><a href="{:url('Index/index')}">首页</a></li>
-            <li><a href="{:url('Quotations/index')}">碎言碎语</a></li>
-            <li><a href="{:url('Diary/index')}">个人日记</a></li>
-            <li><a href="{:url('Html/index')}">模板展示</a></li>
-            <li><a href="{:url('Study/index')}">学无止境</a></li>
-            <li><a href="{:url('Putwords/index')}">留言板</a></li>
-            <li><a href="{:url('Profile/index')}" target="_blank">我的简历</a></li>
-            <div class="clear"></div>
-        </ul>
-      </div>
-       <!--nav end-->
+    {include file="./static/home/nav.html" /}
+    <!--nav end-->
     <!--content start-->
     <div id="content">
          <!--left-->
@@ -67,142 +53,16 @@
            </div>
          </div>
          <!--left end-->
-         <!--right-->
-         <div class="right" id="c_right">
-          <div class="s_about">
-          <h2>关于博主</h2>
-           <img src="__STATIC__/home/images/my.jpg" width="230" alt="博主"/>
-           <p>博主：宋世杰</p>
-           <p>职业：PHP后端工程师</p>
-           <p>简介：一个有梦想的菜鸟工程师</p>
-           <p></p>
-           <div class="clear"></div>
-           </p>
-          </div>
-          <!--栏目分类-->
-           <div class="lanmubox">
-              <div class="hd">
-               <ul><li>精心推荐</li><li>最新文章</li><li class="hd_3">随机文章</li></ul>
-              </div>
-              <div class="bd">
-                <ul>
-					<li><a href="#" title="网站项目实战开发（-）">网站项目实战开发（-）</a></li>
-					<li><a href="#" title="关于响应式布局">关于响应式布局</a></li>
-					<li><a href="#" title="如何创建个人博客网站">如何创建个人博客网站</a></li>
-					<li><a href="#" title="网站项目实战开发（二）">网站项目实战开发（二）</a></li>
-					<li><a href="#" title="为什么新站前期排名老是浮动？(转)">为什么新站前期排名老是浮动？(转)</a></li>
-				</ul>
-                 <ul>
-					<li><a href="#" title="网站项目实战开发（-）">网站项目实战开发（-）</a></li>
-					<li><a href="#" title="关于响应式布局">关于响应式布局</a></li>
-					<li><a href="#" title="如何创建个人博客网站">如何创建个人博客网站</a></li>
-					<li><a href="#" title="网站项目实战开发（二）">网站项目实战开发（二）</a></li>
-					<li><a href="#" title="为什么新站前期排名老是浮动？(转)">为什么新站前期排名老是浮动？(转)</a></li>
-				</ul>
-                 <ul>
-					<li><a href="#" title="网站项目实战开发（-）">网站项目实战开发（-）</a></li>
-					<li><a href="#" title="关于响应式布局">关于响应式布局</a></li>
-					<li><a href="#" title="如何创建个人博客网站">如何创建个人博客网站</a></li>
-					<li><a href="#" title="网站项目实战开发（二）">网站项目实战开发（二）</a></li>
-					<li><a href="#" title="为什么新站前期排名老是浮动？(转)">为什么新站前期排名老是浮动？(转)</a></li>
-				</ul>
-                 
-                
-              </div>
-           </div>
-           <!--end-->
-           <div class="link">
-            <h2>友情链接</h2>
-            <p><a href="https://blog.csdn.net/weixin_42330073" target="_blank">CSND</a></p>
-            <p><a href="https://github.com/top-songshijie" target="_blank">github</a></p>
-           </div>
-         </div>
-         <!--right end-->
-         <div class="clear"></div>
+      <!--侧边栏目分类-->
+         {include file="./static/home/side.html" /}
+      <!--end-->
     </div>
     <!--content end-->
     <!--footer start-->
-    <div id="footer">
-     <p>Design by:少年  2018-09-22</p>
-    </div>
+    {include file="./static/home/footer.html" /}
     <!--footer end-->
-    <script type="text/javascript">jQuery(".lanmubox").slide({easing:"easeOutBounce",delayTime:400});</script>
-    <script  type="text/javascript" src="__STATIC__/home/js/nav.js"></script>
-    <!--侧边导航 start-->
-    <div class="suspension">
-        <div class="suspension-box">
-            <a href="#" class="a a-service "><i class="i"></i></a>
-            <a href="javascript:;" class="a a-service-phone "><i class="i"></i></a>
-            <a href="javascript:;" class="a a-qrcode"><i class="i"></i></a>
-            <a href="#" title="待开放" class="a a-cart"><i class="i"></i></a>
-            <a href="javascript:;" class="a a-top"><i class="i"></i></a>
-            <div class="d d-service">
-                <i class="arrow"></i>
-                <div class="inner-box">
-                    <div class="d-service-item clearfix">
-                        <a href="tencent://message/?uin=997031758=在线咨询&amp;menu=yes" class="clearfix" target="_blank"><span class="circle"><i class="i-qq"></i></span><h3>咨询在线客服</h3></a>
-                    </div>
-                </div>
-            </div>
-            <div class="d d-service-phone">
-                <i class="arrow"></i>
-                <div class="inner-box">
-                    <div class="d-service-item clearfix">
-                        <span class="circle"><i class="i-tel"></i></span>
-                        <div class="text">
-                            <p>合作热线</p>
-                            <p class="red number">13102112093</p>
-                        </div>
-                    </div>
-                    <div class="d-service-intro clearfix">
-                        <p><i></i>欢迎来访</p>
-                    </div>
-                </div>
-            </div>
-            <div class="d d-qrcode">
-                <i class="arrow"></i>
-                <div class="inner-box">
-                    <div class="qrcode-img"><img src="__STATIC__/home/contact/images/side_ewm.jpg" style="width: 200px; padding-left: 12px;" ></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            /* ----- 侧边悬浮 ---- */
-            $(document).on("mouseenter", ".suspension .a", function(){
-                var _this = $(this);
-                var s = $(".suspension");
-                var isService = _this.hasClass("a-service");
-                var isServicePhone = _this.hasClass("a-service-phone");
-                var isQrcode = _this.hasClass("a-qrcode");
-                if(isService){ s.find(".d-service").show().siblings(".d").hide();}
-                if(isServicePhone){ s.find(".d-service-phone").show().siblings(".d").hide();}
-                if(isQrcode){ s.find(".d-qrcode").show().siblings(".d").hide();}
-            });
-            $(document).on("mouseleave", ".suspension, .suspension .a-top", function(){
-                $(".suspension").find(".d").hide();
-            });
-            $(document).on("mouseenter", ".suspension .a-top", function(){
-                $(".suspension").find(".d").hide();
-            });
-            $(document).on("click", ".suspension .a-top", function(){
-                $("html,body").animate({scrollTop: 0});
-            });
-            $(window).scroll(function(){
-                var st = $(document).scrollTop();
-                var $top = $(".suspension .a-top");
-                if(st > 400){
-                    $top.css({display: 'block'});
-                }else{
-                    if ($top.is(":visible")) {
-                        $top.hide();
-                    }
-                }
-            });
-
-        });
-    </script>
-<!--侧边导航 end-->
+    <!--侧边联系导航 start-->
+    {include file="./static/home/contact.html" /}
+    <!--侧边联系导航 end-->
 </body>
 </html>

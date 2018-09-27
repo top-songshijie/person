@@ -16,23 +16,11 @@
 
 <body>
 <!--header start-->
-<div id="header">
-    <h1>个人博客</h1>
-    <p>青春是打开了,就合不上的书。人生是踏上了，就回不了头的路，爱情是扔出了，就收不回的赌注。</p>
-    <div id="nav">
-        <ul>
-            <li><a href="{:url('Index/index')}">首页</a></li>
-            <li><a href="{:url('Quotations/index')}">碎言碎语</a></li>
-            <li><a href="{:url('Diary/index')}">个人日记</a></li>
-            <li><a href="{:url('Html/index')}">模板展示</a></li>
-            <li><a href="{:url('Study/index')}">学无止境</a></li>
-            <li><a href="{:url('Putwords/index')}">留言板</a></li>
-            <li><a href="{:url('Profile/index')}" target="_blank">我的简历</a></li>
-            <div class="clear"></div>
-        </ul>
-    </div>
-</div>
+{include file="./static/home/header.html" /}
 <!--header end-->
+<!--nav-->
+{include file="./static/home/nav.html" /}
+<!--nav end-->
 <!--content start-->
 <div id="say">
     <div class="weizi">
@@ -69,10 +57,8 @@
     </ul>
 </div>
 <!--content end-->
-<!--footer-->
-<div id="footer">
-    <p>Design by:少年 2014-8-9</p>
-</div>
+<!--footer start-->
+{include file="./static/home/footer.html" /}
 <!--footer end-->
 <script type="text/javascript">jQuery(".lanmubox").slide({easing:"easeOutBounce",delayTime:400});</script>
 <script  type="text/javascript" src="__STATIC__/home/js/nav.js"></script>
