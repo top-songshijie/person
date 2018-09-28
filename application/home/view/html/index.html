@@ -18,23 +18,11 @@
 
 <body>
 <!--header start-->
-<div id="header">
-    <h1>个人博客</h1>
-    <p>青春是打开了,就合不上的书。人生是踏上了，就回不了头的路，爱情是扔出了，就收不回的赌注。</p>
-    <div id="nav">
-        <ul>
-            <li><a href="{:url('Index/index')}">首页</a></li>
-            <li><a href="{:url('Quotations/index')}">碎言碎语</a></li>
-            <li><a href="{:url('Diary/index')}">个人日记</a></li>
-            <li><a href="{:url('Html/index')}">模板展示</a></li>
-            <li><a href="{:url('Study/index')}">学无止境</a></li>
-            <li><a href="#">留言板</a></li>
-            <li><a href="{:url('Profile/index')}" target="_blank">我的简历</a></li>
-            <div class="clear"></div>
-        </ul>
-    </div>
-</div>
+{include file="./static/home/header.html" /}
 <!--header end-->
+<!--nav-->
+{include file="./static/home/nav.html" /}
+<!--nav end-->
 <!--content start-->
 <div id="content_xc">
     <div class="weizi">
@@ -45,40 +33,13 @@
             <div class="w960 mt_10">
                 <div class="w650">
                     <ul class="tips" id="wf-main" style="display:none" >
-                        <li class="wf-cld"><img src="__STATIC__/home/images/photo/8.jpg"  width="200" height="178" alt="" /></li>
-                        <li class="wf-cld"><img src="__STATIC__/home/images/photo/1.jpg" height="147" width="200" alt="" /></li>
-                        <li class="wf-cld"><img src="__STATIC__/home/images/photo/2.jpg"  width="200" height="267" alt="" /></li>
-                        <li class="wf-cld"><img src="__STATIC__/home/images/photo/3.jpg"  width="200" height="125" alt="" /></li>
-                        <li class="wf-cld"><img src="__STATIC__/home/images/photo/4.jpg" width="200" height="299" alt="" /></li>
-                        <li class="wf-cld"><img src="__STATIC__/home/images/photo/5.jpg" width="200" height="125" alt="" /></li>
-                        <li class="wf-cld"><img src="__STATIC__/home/images/photo/6.jpg" width="200" height="267" alt="" /></li>
-                        <li class="wf-cld"><img src="__STATIC__/home/images/photo/7.jpg" width="200" height="135" alt="" /></li>
-                        <li class="wf-cld"><img src="__STATIC__/home/images/photo/9.jpg"  width="200" height="300" alt="" /></li>
-                        <li class="wf-cld"><img src="__STATIC__/home/images/photo/10.jpg"  width="200" height="107" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/8.jpg"  width="200" height="178" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/1.jpg" height="147" width="200" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/2.jpg"  width="200" height="267" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/3.jpg"  width="200" height="125" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/4.jpg" width="200" height="299" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/5.jpg" width="200" height="125" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/6.jpg" width="200" height="267"alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/7.jpg" width="200" height="135" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/9.jpg"  width="200" height="300" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/10.jpg"  width="200" height="107" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/2.jpg"  width="200" height="267" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/3.jpg"  width="200" height="125" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/8.jpg"  width="200" height="178" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/1.jpg" height="147" width="200" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/2.jpg"  width="200" height="267" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/3.jpg"  width="200" height="125" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/4.jpg" width="200" height="299" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/5.jpg" width="200" height="125" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/6.jpg" width="200" height="267"alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/7.jpg" width="200" height="135" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/9.jpg"  width="200" height="300" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/10.jpg"  width="200" height="107" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/2.jpg"  width="200" height="267" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" lazy_src="__STATIC__/home/images/photo/3.jpg"  width="200" height="125" alt="" /></li>
+                        <a href="http://47.104.202.142/html/demo3/index.html" target="_blank">
+                        <li class="wf-cld"><img src="__STATIC__/home/images/html/demo3.jpg"  width="200"/></li>
+                        </a>
+                        <a href="http://47.104.202.142/html/demo4/index.html" target="_blank">
+                            <li class="wf-cld"><img src="__STATIC__/home/images/html/demo4.jpg"  width="200"/></li>
+                        </a>
+
                     </ul>
                 </div>
             </div>
