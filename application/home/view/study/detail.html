@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>学无止境-个人博客</title>
+    <title>浅谈：html5和html的区别-个人博客</title>
     <meta name="keywords" content="个人博客" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="__STATIC__/home/css/index.css"/>
@@ -24,31 +24,24 @@
 <!--content start-->
 <div id="content">
     <!--left-->
-    <div class="left" id="learn">
+    <div class="left" id="news">
         <div class="weizi">
-            <div class="wz_text">当前位置：<a href="#">首页</a>><h1>学无止境</h1></div>
+            <div class="wz_text">当前位置：<a href="#">首页</a>><a href="#">学无止境</a>><span>文章内容</span></div>
         </div>
-        <div class="l_content">
-            {volist name='list' id='vo'}
-            <div class="wz">
-                <h3><a href="{:url('study/detail',array('id'=>$vo['id']))}" title="{$vo.title}">{$vo.title}</a></h3>
-                <dl>
-                    <dt><img src="{$vo.thumb}" width="200"  height="123" alt=""></dt>
-                    <dd>
-                        <p class="dd_text_1">{$vo.briefcontent}</p>
-                        <p class="dd_text_2">
-                            <span class="left author">小杰</span><span class="left sj">时间:{$vo.create_time}</span>
-                            <span class="left fl">分类:<a href="#" title="{$vo.cate_name}">{$vo.cate_name}</a></span>
-                            <span class="left yd"><a href="{:url('study/detail',array('id'=>$vo['id']))}" title="阅读全文">阅读全文</a>
-               </span>
-                        <div class="clear"></div>
-                        </p>
-                    </dd>
-                    <div class="clear"></div>
-                </dl>
+        <div class="news_content">
+            <div class="news_top">
+                <h1>{$info.title}</h1>
+                <p>
+                    <span class="left sj">时间:{$info.create_time}</span><span class="left fl">分类:{$info.cate_name}</span>
+                    <span class="left author">小杰</span>
+                </p>
+                <div class="clear"></div>
             </div>
-            {/volist}
+            <div class="news_text">
+                {$info.content}
+            </div>
         </div>
+
     </div>
     <!--end left -->
     <!--侧边栏目分类-->
@@ -56,7 +49,6 @@
     <!--end-->
 </div>
 <!--content end-->
-<!--footer-->
 <!--footer start-->
 {include file="./static/home/footer.html" /}
 <!--footer end-->
@@ -64,4 +56,5 @@
 <script  type="text/javascript" src="__STATIC__/home/js/nav.js"></script>
 </body>
 </html>
+
 

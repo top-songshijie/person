@@ -16,9 +16,9 @@ class Diary extends Model
 	public function getList()
 	{
 		$list = $this
-			->field('id,thumb,content,createtime')
+			->field('id,thumb,content,create_time')
 			->order('id DESC')
-			->select();
+			->select()->toArray();
 		return $list;
 	}
 }
