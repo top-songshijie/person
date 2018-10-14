@@ -11,6 +11,10 @@ class Diary extends Controller
 {
     public function index()
     {
+		$diary = model('Diary');
+		$list = $diary->getList();
+		
+		$this->assign('list',$list);
         return $this->fetch();
     }
 }
