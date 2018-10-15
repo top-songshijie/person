@@ -33,13 +33,11 @@
             <div class="w960 mt_10">
                 <div class="w650">
                     <ul class="tips" id="wf-main" style="display:none" >
-                        <a href="http://47.104.202.142/html/demo3/index.html" target="_blank">
-                        <li class="wf-cld"><img src="__STATIC__/home/images/html/demo3.jpg"  width="200"/></li>
+                        {volist name='list' id='vo'}
+                        <a href="{$vo.url}" target="_blank">
+                            <li class="wf-cld"><img src="{$vo.thumb}"  width="200"/></li>
                         </a>
-                        <a href="http://47.104.202.142/html/demo4/index.html" target="_blank">
-                            <li class="wf-cld"><img src="__STATIC__/home/images/html/demo4.jpg"  width="200"/></li>
-                        </a>
-
+                        {/volist}
                     </ul>
                 </div>
             </div>
