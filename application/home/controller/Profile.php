@@ -11,6 +11,10 @@ class Profile extends Controller{
 
 	public function index()
 	{
+		$profile = model('Profile');
+		$list = $profile->getList();
+
+		$this->assign('list',$list);
 		return $this->fetch();
 	}
 }

@@ -13,7 +13,7 @@
 <body>
 <aside class="sidebar">
     <div class="avatar">
-        <img src="__STATIC__/home/profile/img/avatar.jpg" title="保罗酱"/>
+        <img src="http://pgo9exm57.bkt.clouddn.com/1539695925.jpg" title="宋世杰"/>
     </div>
     <nav class="nav">
         <a href="#info">资料</a>
@@ -88,36 +88,14 @@
         <div class="wrap">
             <h2 class="title">个人作品</h2>
             <div class="row">
+                {volist name='list' id='vo'}
                 <div class="col-s-6">
                     <div class="works-item">
-                        <img src="__STATIC__/home/profile/img/works/project1.jpg"/>
-                        <p>飞签之音 APP</p>
+                        <img src="{$vo.thumb}"/>
+                        <p>{$vo.title}</p>
                     </div>
                 </div>
-                <div class="col-s-6">
-                    <div class="works-item">
-                        <img src="__STATIC__/home/profile/img/works/project2.jpg"/>
-                        <p>帮换宝商城 微信公众号</p>
-                    </div>
-                </div>
-                <div class="col-s-6">
-                    <div class="works-item">
-                        <img src="__STATIC__/home/profile/img/works/project3.jpg"/>
-                        <p>小学生英文直通车 微信小程序</p>
-                    </div>
-                </div>
-                <div class="col-s-6">
-                    <div class="works-item">
-                        <img src="__STATIC__/home/profile/img/works/project4.jpg"/>
-                        <p>研依静官网+商城    PC+手机</p>
-                    </div>
-                </div>
-                <div class="col-s-6">
-                    <div class="works-item">
-                        <img src="__STATIC__/home/profile/img/works/project5.jpg"/>
-                        <p>万正多模块项目 微信公众号</p>
-                    </div>
-                </div>
+                {/volist}
             </div>
         </div>
     </section>
