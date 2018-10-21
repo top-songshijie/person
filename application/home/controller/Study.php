@@ -1,6 +1,6 @@
 <?php
 /**
- * 学无止境
+ * 学无止境,文章详情
  * 2018/09/26
  */
 namespace app\home\controller;
@@ -14,7 +14,7 @@ class Study extends Controller
     public function index()
     {
 		$article = model('Article');
-		//cate_id = 1;学无止境
+		//cate_id = 1;CSDN博客
 		$list = $article->getList('',1);
 
 		$this->assign('list',$list);

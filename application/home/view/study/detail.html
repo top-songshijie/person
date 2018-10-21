@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>浅谈：html5和html的区别-个人博客</title>
+    <title>{$info.title}-个人博客</title>
     <meta name="keywords" content="个人博客" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="__STATIC__/home/css/index.css"/>
@@ -33,7 +33,7 @@
                 <h1>{$info.title}</h1>
                 <p>
                     <span class="left sj">时间:{$info.create_time}</span><span class="left fl">分类:{$info.cate_name}</span>
-                    <span class="left author">小杰</span>
+                    <span class="left author">{$info.author}</span>
                 </p>
                 <div class="clear"></div>
             </div>
@@ -41,7 +41,11 @@
                 {$info.content}
             </div>
         </div>
-
+<style>
+    .news_text img {
+        width: 100%;
+    }
+</style>
     </div>
     <!--end left -->
     <!--侧边栏目分类-->

@@ -31,15 +31,15 @@
         <div class="l_content">
             {volist name='list' id='vo'}
             <div class="wz">
-                <h3><a href="{:url('study/detail',array('id'=>$vo['id']))}" title="{$vo.title}">{$vo.title}</a></h3>
+                <h3><a target="_blank" href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
                 <dl>
                     <dt><img src="{$vo.thumb}" width="200"  height="123" alt=""></dt>
                     <dd>
                         <p class="dd_text_1">{$vo.briefcontent}</p>
                         <p class="dd_text_2">
-                            <span class="left author">小杰</span><span class="left sj">时间:{$vo.create_time}</span>
+                            <span class="left author">{$vo.author}</span><span class="left sj">时间:{$vo.create_time}</span>
                             <span class="left fl">分类:<a href="#" title="{$vo.cate_name}">{$vo.cate_name}</a></span>
-                            <span class="left yd"><a href="{:url('study/detail',array('id'=>$vo['id']))}" title="阅读全文">阅读全文</a>
+                            <span class="left yd"><a target="_blank" href="{$vo.url}" title="阅读全文">阅读全文</a>
                </span>
                         <div class="clear"></div>
                         </p>
