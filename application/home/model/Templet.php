@@ -16,7 +16,7 @@ class Templet extends Model
 	public function getList()
 	{
 		$list = $this
-			->field('id,thumb,url')
+			->field('id,title,thumb,url')
 			->order('id DESC')
 			->select()->toArray();
 		return $list;
