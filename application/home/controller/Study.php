@@ -13,7 +13,7 @@ class Study extends Controller
 
     public function index()
     {
-		$article = model('Article');
+		$article = new Article();
 		//cate_id = 1;CSDN博客
 		$list = $article->getList('',1);
 

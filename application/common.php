@@ -10,3 +10,13 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
+
+/**
+ * 获取七牛云图片预览链接
+ * @param string $file 除去七牛云域名外的地址
+ * @return string
+ */
+function ssj_get_image_preview_url($file)
+{
+	return 'http://article.wangshuwen.com/' . $file;
+}

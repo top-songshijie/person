@@ -29,6 +29,7 @@ class Article extends Model
 			->order('a.id DESC')
 			->select()->each(function ($item){
 				$item['create_time'] = date('Y-m-d',$item['create_time']);
+				$item['thumb'] = ssj_get_image_preview_url($item['thumb']);
 			})->toArray();
 		return $list;
 	}
